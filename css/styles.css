@@ -81,7 +81,6 @@ p {
   position: relative;
   padding: 5% 15%;
   background-color: white;
-  z-index: 1;
 }
 
 .feature-box {
@@ -151,14 +150,34 @@ p {
 /* footer */
 
 #footer {
-  text-align: right;
-  background-color: black;
-  color: white;
-  padding: 2% 7%;
+  text-align: center;
+  background-color: #fff;
+  padding: 5%;
+}
 
+.footer-icon {
+  margin: 0 10px;
+}
+
+.footer-icon:hover {
+  color:#f8f8f8;
 }
 
 .credits {
-  margin-bottom: 0;
-  line-height: 2rem;
+  margin-top:20px;
+
+}
+
+@media (max-width:991px) {
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    max-width: 50%;
+    margin: 1rem 0;
+  }
+  #title {
+    text-align: center;
+  }
+
 }
